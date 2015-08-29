@@ -34,7 +34,7 @@ use leyestd\alipay\Alipay;
 
 use leyestd\alipay\lib\AlipaySubmit;
 
-//参数为支付宝所需
+//参数为支付宝所需,详细请看构造方法
 
 $alipay=new Alipay($order->orderNumber,  ltrim($productSkus),$cost,$order->notes,$show_url,$recipient->name,$recipient->address,$recipient->postcode,$recipient->phone,$recipient->mobile);
 
