@@ -5,7 +5,7 @@
 
     "description": "Yii framework alipay",
     "keywords": ["yii2","alipay","yii2 alipay"],
-    "minimum-stability": "dev",
+   
     "license": "BSD-3-Clause",
     "support": {
         "source": "https://github.com/leyestd/yii2-alipay.git"
