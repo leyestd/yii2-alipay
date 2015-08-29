@@ -9,21 +9,32 @@ composer require leyestd/yii2-alipay "dev-master"
 
 return [
     'adminEmail' => 'xxxxx@qq.com',
+
     'supportEmail' => 'xxxxxxx@qq.com',
+
     'user.passwordResetTokenExpire' => 3600,
+
     'showUrl'=>'http://www.sasr.cn/index.php',
+
     'notifyUrl' => 'http://www.sasr.cn/index.php/ali-return/notify',  
-    'returnUrl' => 'http://www.sasr.cn/index.php/ali-return/returned',   
+
+    'returnUrl' => 'http://www.sasr.cn/index.php/ali-return/returned', 
+  
     'aliPartner' => 'xxxxxxxxxxxxx',
+
     'aliSellerEmail' => 'xxxxxx@126.com',
+
     'aliKey'=> 'xxxxxxxx'
+
 ];
 
 使用
+
 use leyestd\alipay\Alipay;
 use leyestd\alipay\lib\AlipaySubmit;
 
 //参数为支付宝所需
+
 $alipay=new Alipay($order->orderNumber,  ltrim($productSkus),$cost,$order->notes,$show_url,$recipient->name,$recipient->address,$recipient->postcode,$recipient->phone,$recipient->mobile);
 
 $html_text = (new AlipaySubmit($alipay->alipay_config))->buildRequestForm($alipay->parameter, "get", "确认");
