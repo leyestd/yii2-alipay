@@ -2,6 +2,7 @@
 
 namespace leyestd\alipay\lib;
 
+use Yii;
 /* *
  * 支付宝接口公用函数
  * 详细：该类是请求、通知返回两个文件所调用的公用函数核心处理文件
