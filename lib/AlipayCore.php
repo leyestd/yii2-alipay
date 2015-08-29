@@ -89,7 +89,7 @@ class AlipayCore {
      * @param $word 要写入日志里的文本内容 默认值：空值
      */
     public static function logResult($word = '') {
-        $fp = fopen(str_replace("\\","/", dirname(dirname(__FILE__)) )."/log.txt", "a");
+        $fp = fopen(Yii::getAlias('@frontend/runtime/logs')."/alilog.txt", "a");
         flock($fp, LOCK_EX);
         fwrite($fp, "执行日期：" . strftime("%Y%m%d%H%M%S", time()) . "\n" . $word . "\n");
         flock($fp, LOCK_UN);

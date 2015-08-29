@@ -56,7 +56,7 @@ $verify_result = $alipayNotify->verifyNotify();
 
 日志
 
-默认在vender/leyestd/yii2-alipay/log.txt  安装好扩展需要chmod 666 添加写入权限
+默认在frontend/runtime/logs/alilog.txt  安装好扩展需要chmod 666 添加写入权限
 
 也可自己修改AlipayCore下的logResult方法到指定位置
 
