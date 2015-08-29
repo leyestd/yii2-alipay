@@ -1,0 +1,28 @@
+{
+    "name": "leyestd/yii2-alipay",
+
+    "type": "yii2-extension",
+
+    "description": "The Alipay integration for the Yii framework",
+    "keywords": ["yii2","alipay","yii2 alipay"],
+    "license": "BSD-3-Clause",
+    "support": {
+        "source": "https://github.com/leyestd/yii2-alipay.git"
+    },
+    "authors": [
+        {
+            "name": "Long Wang",
+            "email": "303650172@qq.com"
+        }
+    ],
+
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "leyestd\\alipay\\": ""
+        }
+    }
+}
