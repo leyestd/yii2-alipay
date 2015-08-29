@@ -31,6 +31,7 @@ return [
 使用
 
 use leyestd\alipay\Alipay;
+
 use leyestd\alipay\lib\AlipaySubmit;
 
 //参数为支付宝所需
@@ -44,14 +45,17 @@ echo $html_text;
 支付宝支付后返回
 
 $alipayNotify = new AlipayNotify((new Aliconfig)->getAliconfig());
+
 $verify_result = $alipayNotify->verifyReturn();
 
 以下为支付宝支付后通知
 
 $alipayNotify = new AlipayNotify((new Aliconfig)->getAliconfig());
+
 $verify_result = $alipayNotify->verifyNotify();
 
 日志
+
 默认在vender/leyestd/yii2-alipay/log.txt  安装好扩展需要chmod 666 添加写入权限
 
 也可自己修改AlipayCore下的logResult方法到指定位置
